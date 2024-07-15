@@ -1,0 +1,131 @@
+@import '/src/variables.module.scss';
+
+.slider{
+    width: 100%;    
+    position: relative;    
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+}
+
+.slider-line{
+    width: 300%;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: 0.7s;
+    color: $color-light;
+    text-align: center;    
+
+}
+
+.slider-item{    
+    width: 100%;
+    height: 850px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;      
+   
+}
+
+.info{      
+    text-align: center;
+    color: #ffffff;
+
+    h1{
+        font-size: 95px;
+        letter-spacing: 7px;        
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        // font-style: italic;
+        text-shadow: 0 0 5px #000000;
+        margin: 10px 0;
+        border-bottom: 1px solid #ffffff;
+        color: $color-accent;
+       
+
+    }
+    h2{
+        font-size: 18px;
+        margin: 0;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-shadow: 0 0 5px #000000;
+        
+        &::before {
+            content: '// '; 
+            color: $color-accent;     
+        }
+        
+    }
+
+    p{              
+        font-size: 16px;
+        width: 700px;          
+        text-shadow: 0 0 5px #000000;
+        margin: 20px 0;
+    }
+}
+
+
+.button{    
+    background-color: $color-accent;
+    color: #ffffff;
+    font-size: 14px;
+    border: 1px solid $color-accent;
+    box-shadow: 0 0 5px $color-accent;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;      
+    text-shadow: 0 0 2px #000000; 
+
+    &:hover{
+        // box-shadow: 0 0 5px #ffffff;     
+        background-color: #000000;   
+        color: $color-accent;
+    }
+
+}
+
+.progress-bar{
+    
+    height: 3px;
+    background-color: $color-accent;
+   
+
+  }
+
+
+.animation{    
+    div{
+        div{            
+            animation-name: move;
+            animation-duration: 1.5s;           
+            
+        }
+    }
+}
+
+@keyframes move {
+    from {
+        opacity: 0;
+        margin-left: -800px;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0px;
+    }
+  }
+
+
+
+
+ 

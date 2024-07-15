@@ -1,0 +1,25 @@
+@import '/src/variables.module.scss';
+
+.header{
+    width: 100%;    
+    background-color: $color-main;
+}
+
+
+.menu{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;   
+    padding: 25px 0;
+    transition: 0.5s;    
+    
+}
+
+.container{    
+    display: flex;
+    justify-content: space-between;    
+    width: 80%;
+    margin: auto;
+    
+}

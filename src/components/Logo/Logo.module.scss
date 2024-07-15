@@ -1,0 +1,40 @@
+@import '/src/variables.module.scss';
+
+.logo{
+    display: flex;    
+    align-items: center;
+
+}
+
+.image{
+    width: 50px;
+
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+
+}
+
+.title{
+    color: $color-accent;    
+    font-size: 18px;
+    text-shadow: 0 0 2px $color-accent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    
+    
+}
+
+.subtitle{
+    color: #ffffff;    
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;  
+   
+}
