@@ -1,5 +1,6 @@
 import './App.module.scss';
 import AboutUs from './components/AboutUs/AboutUs';
+import Gallery from './components/Gallery/Gallery';
 import Header from './components/Header/Header';
 import OurAdvantages from './components/OurAdvantages/OurAdvantages';
 import OurOffer from './components/OurOffer/OurOffer';
@@ -19,6 +20,7 @@ function App() {
 			<OurStatistics />
 			<PopularTours />
 			<SchemeOfWork />
+			<Gallery />
 		</>
 	);
 }
