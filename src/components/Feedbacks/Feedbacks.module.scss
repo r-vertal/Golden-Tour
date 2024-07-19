@@ -1,0 +1,106 @@
+@import '/src/variables.module.scss';
+
+.feedbacks{   
+    padding: 30px 50px;
+    text-align: center;
+    
+}
+
+.container{
+    padding: 20px 40px;  
+    margin: auto;
+    width: 50%;
+    border: 2px solid $color-accent;  
+    box-shadow: 0 0 10px $color-accent; 
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.title{
+    font-size: 14px;
+    color: $color-accent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #888888;
+
+    &::before {
+        content: '// '; 
+        color: #ffffff;       
+      }
+
+
+}
+
+.subtitle{
+    font-size: 30px;   
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;   
+}
+
+
+.feedback-items{   
+    position: relative;      
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.items-container{
+    display: flex;
+    position: relative;
+    width: 300%;
+    transition: 0.4s;
+
+}
+
+.item{
+    width: 100%;
+    padding: 0 70px;
+}
+
+.item-name{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    color: $color-accent;
+
+}
+
+.item-description{
+    font-size: 18px;
+    color: #eeeeee;
+}
+
+.button-prev{
+    position: absolute;
+    top: 35%;
+    left: 0;
+    color: #eeeeee;
+    font-size: 38px;
+    background: none;
+    border: none;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.button-next{
+    position: absolute;
+    top: 35%;
+    right: 0;
+    font-size: 38px;
+    color: #eeeeee;
+    background: none;
+    border: none;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+        opacity: 1;
+    }
+}
