@@ -1,0 +1,69 @@
+@import "/src/variables.module.scss";
+
+.footer{
+    background-color: #0a0a0a;
+    
+}
+
+.footer-subscription{
+    display: flex;
+    justify-content: center;
+    background-color: $color-accent;
+    padding: 15px;
+}
+
+.footer-subscription-info{
+    display: flex;
+    align-items: center;
+    padding-right:20px ;
+    color: #ffffff; 
+    font-weight: 500;
+}
+
+.footer-subscription-form{
+    height: 40px;
+    form{
+        display: flex;
+    }
+    input{
+        outline: none;
+        box-sizing: border-box;
+        width: 250px;
+        height: 40px;
+        border-radius: 10px 0 0 10px;
+        border: 0px solid #000000;
+        border-bottom: 3px solid rgb(0, 0, 0);
+        padding-left: 20px;  
+    }
+
+    button{
+        box-sizing: border-box;
+        cursor: pointer;
+        width: 110px;
+        height: 40px;
+        border-radius: 0 10px 10px 0;
+        background-color: #000000;
+        color: #ffffff;
+        border: 1px solid #000000;
+        transition: 0.5s;
+    
+        &:hover{
+            background-color: #303030;
+        }
+    }
+}
+
+
+
+.footer-info{
+    width: 80vw;
+    margin: auto;
+    border-top: 1px solid white;
+    text-align: center;
+    padding: 10px 0;
+
+    span{
+        color: #999999;
+        font-size: 14px;
+    }
+}

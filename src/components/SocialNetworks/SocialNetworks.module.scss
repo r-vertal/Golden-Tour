@@ -1,0 +1,54 @@
+.social-networks{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+    a{
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+        border: 0px solid #ffffff;
+        box-shadow: 0 0 5px #ffffff;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;        
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.5s;
+
+        img{
+            width: 25px;
+            margin: auto;
+            opacity: 0;
+        }
+
+        &:hover{
+            background-image: none;
+            background-color: #ffffff;
+        }
+        &:hover img{
+            opacity: 1;
+        }
+    }
+}
+
+.social-networks-youtube{
+    background-image: url(images/logo_youtube_white.png);
+}
+
+.social-networks-instagram{
+    background-image: url(images/logo_instagram_white.png);
+}
+
+.social-networks-vk{
+    background-image: url(images/logo_vk_white.png);
+}
+
+.social-networks-telegram{
+    background-image: url(images/logo_telegram_white.png);
+}
+
+.social-networks-twitch{
+    background-image: url(images/logo_twitch_white.png);
+}

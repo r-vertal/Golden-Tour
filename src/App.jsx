@@ -2,6 +2,7 @@ import './App.module.scss';
 import AboutUs from './components/AboutUs/AboutUs';
 import Contacts from './components/Contacts/Contacts';
 import Feedbacks from './components/Feedbacks/Feedbacks';
+import Footer from './components/Footer/Footer';
 import Gallery from './components/Gallery/Gallery';
 import Header from './components/Header/Header';
 import OurAdvantages from './components/OurAdvantages/OurAdvantages';
@@ -25,6 +26,7 @@ function App() {
 			<Gallery />
 			<Feedbacks />
 			<Contacts />
+			<Footer />
 		</>
 	);
 }
