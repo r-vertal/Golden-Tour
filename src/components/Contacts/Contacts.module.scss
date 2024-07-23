@@ -1,0 +1,172 @@
+@import '/src/variables.module.scss';
+
+.contacts{ 
+    background-color: $color-main;
+    padding: 40px 0;
+}
+
+.container{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    align-items: center;
+}
+
+.contacts-info{
+    padding: 20px 40px;  
+    background: $color-dark;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px rgba(173, 173, 173, 0.4);
+    
+}
+
+.title{
+    font-size: 14px;
+    color: $color-accent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #888888;
+
+    &::before {
+        content: '// '; 
+        color: #ffffff;       
+      }
+
+}
+
+.subtitle{
+    font-size: 24px;   
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;  
+
+}
+
+.paragraph{
+    font-size: 14px;
+    color: #888888;
+    margin-top: 20px;
+    span{
+        color: $color-accent;
+        font-weight: 500;
+    }
+    
+}
+
+.phone-numbers{
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0px;
+    color: #cccccc;
+
+    li{       
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        img{
+            height: 18px;
+            margin-right: 5px;
+        }
+        
+    }
+
+}
+
+.email{
+    color: #cccccc;    
+    display: flex;
+    align-items: center;
+    
+    span{
+        color: $color-accent;
+    }
+    img{
+        height: 18px;
+        margin-right: 5px;
+    }
+}
+
+.contacts-form{
+    padding: 20px;
+    margin-left: 80px;
+
+    form{       
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 450px;        
+        padding: 20px;
+        background: $color-dark;
+        border-radius: 40px;
+        box-shadow: 0px 0px 30px rgba(173, 173, 173, 0.4);
+
+
+    }
+
+    label{
+        color: #cccccc;
+        padding-left:  53px;        
+        font-size: 14px;
+    }
+
+    input{
+        width: 300px;
+        height: 40px;
+        margin: 5px auto 15px; 
+        border-radius: 4px;
+        outline: none;       
+        border: none;
+        font-size: 18px;
+        padding-left: 10px;
+        &:focus{
+            border-bottom: 3px solid $color-accent;
+        }
+
+        &::placeholder{
+            font-size: 12px;
+        }
+        
+
+    }
+    
+
+    button{
+        width: 180px;
+        height: 40px;
+        margin: 10px auto;
+        background-color: $color-accent;
+        color: #ffffff;
+        font-size: 12px;
+        border: 1px solid $color-accent;
+        box-shadow: 0 0 5px #4d4b4a;        
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.4s;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;   
+    
+        &:hover{
+            box-shadow: 0 0 3px $color-accent;    
+            background-color: #000000;  
+            color: $color-accent; 
+            
+        }
+    }
+}
+
+
+
+.form-title{
+    text-align: center;
+    color: #ffffff;
+    span{
+        color: $color-accent;
+        font-size: 24px;
+        font-weight: 600;        
+    }
+
+}

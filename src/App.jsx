@@ -1,5 +1,6 @@
 import './App.module.scss';
 import AboutUs from './components/AboutUs/AboutUs';
+import Contacts from './components/Contacts/Contacts';
 import Feedbacks from './components/Feedbacks/Feedbacks';
 import Gallery from './components/Gallery/Gallery';
 import Header from './components/Header/Header';
@@ -23,6 +24,7 @@ function App() {
 			<SchemeOfWork />
 			<Gallery />
 			<Feedbacks />
+			<Contacts />
 		</>
 	);
 }
