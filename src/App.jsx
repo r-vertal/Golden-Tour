@@ -1,5 +1,6 @@
 import './App.module.scss';
 import AboutUs from './components/AboutUs/AboutUs';
+import ButtonUp from './components/ButtonUp/ButtonUp';
 import Contacts from './components/Contacts/Contacts';
 import Feedbacks from './components/Feedbacks/Feedbacks';
 import Footer from './components/Footer/Footer';
@@ -27,6 +28,7 @@ function App() {
 			<Feedbacks />
 			<Contacts />
 			<Footer />
+			<ButtonUp />
 		</>
 	);
 }
