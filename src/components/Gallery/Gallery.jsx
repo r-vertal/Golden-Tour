@@ -21,7 +21,7 @@ function Gallery() {
 	});
 
 	return (
-		<section className={styles.gallery}>
+		<section id="gallery" className={styles.gallery}>
 			<div className={styles.container}>
 				<h2 className={styles.title}>Галерея</h2>
 				<h3 className={styles.subtitle}>Делимся впечатлениями</h3>

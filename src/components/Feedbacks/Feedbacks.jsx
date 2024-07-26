@@ -26,7 +26,7 @@ function Feedbacks() {
 	};
 
 	return (
-		<section className={styles.feedbacks}>
+		<section id="feedbacks" className={styles.feedbacks}>
 			<div className={styles.container}>
 				<h2 className={styles.title}>Отзывы</h2>
 				<h3 className={styles.subtitle}>То что о нас говорят клиенты:</h3>

@@ -1,9 +1,10 @@
 @import '/src/variables.module.scss';
 
 .popular-tours{
-    padding: 40px 0px;
+    padding: 50px 0;
     text-align: center;
     background-color: $color-main;
+    scroll-margin-top: 65px;
 }
 
 .container{    

@@ -12,7 +12,7 @@ function OurAdvantages() {
 	};
 
 	return (
-		<section className={styles['our-advantages']}>
+		<section id="our-advantages" className={styles['our-advantages']}>
 			<div className={styles.container}>
 				<h2 className={styles.title}>Наши преимущества</h2>
 				<h3 className={styles.subtitle}>

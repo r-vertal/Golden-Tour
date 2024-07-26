@@ -2,7 +2,7 @@ import styles from './AboutUs.module.scss';
 
 function AboutUs() {
 	return (
-		<section className={styles['about-us']}>
+		<section id="about-us" className={styles['about-us']}>
 			<div className={styles['about-us-image']}>
 				<img src="/images/office.jpg" alt="about-us" title="About Us" />
 			</div>

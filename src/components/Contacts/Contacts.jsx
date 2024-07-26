@@ -3,7 +3,7 @@ import ContactsForm from './ContactsForm';
 
 function Contacts() {
 	return (
-		<section className={styles.contacts}>
+		<section id="contacts" className={styles.contacts}>
 			<div className={styles.container}>
 				<div className={styles['contacts-info']}>
 					<h2 className={styles.title}>Контакты</h2>

@@ -8,7 +8,7 @@ const popularTours = data.map((item) => {
 
 function PopularTours() {
 	return (
-		<section className={styles['popular-tours']}>
+		<section id="popular-tours" className={styles['popular-tours']}>
 			<div className={styles.container}>
 				<h2 className={styles.title}>Популярные направления</h2>
 				<h3 className={styles.subtitle}>По версии отдыхающих</h3>
