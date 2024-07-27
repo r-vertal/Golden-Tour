@@ -1,7 +1,7 @@
 @import '/src/variables.module.scss';
 
 .navigation{    
-    display: flex;
+    display: flex;    
     align-items: center;   
 
 }
@@ -31,4 +31,113 @@
         }
     }
 
+}
+
+
+.button-open{
+    display: none;
+    background: none;
+    border: 0px solid #000000;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.4s;
+    
+    &:hover{
+        color: $color-accent;
+    }
+
+    span{
+        display: flex;
+        align-items: center;
+        height: 10px;
+
+    }
+}
+
+.button-close{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: 0px solid #000000;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.4s;
+
+    &:hover{
+        color: $color-accent;
+    }
+
+
+}
+
+
+@media screen  and (max-width:1150px){
+
+    .button-open{
+        display: block;
+    }
+    .navigation{
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .nav-list{
+        display: flex;   
+        flex-direction: column; 
+        padding: 100px 50px 30px;
+        width: 400px;
+        height: 100vh;
+        background-color: $color-main;
+        position: absolute;        
+        top: 0;
+        right: -500px;    
+        transition: 1s;
+
+
+        .list-item{
+            margin: 5px 0;
+            border-bottom: 1px solid #333333;
+            padding: 10px 0;
+            a{
+                font-size: 18px;
+                font-weight: 500;
+                padding: 0;
+            }
+        }
+    
+    }
+
+    .show-nav{
+        right: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(160, 160, 160, 0.7);    
+
+        .nav-list{
+            right: 0;
+        }
+        .button-open{
+            display: none;
+        }
+        .button-close{
+            display: block;
+        }
+    }
+
+}
+
+@media screen  and (max-width:500px){
+    .nav-list{
+        width: 100%;
+    }
 }
