@@ -174,3 +174,202 @@
     }   
     
 }
+
+@media screen  and (max-width: 1665px){
+    .container{
+        width: 70%;
+
+    }
+}
+
+@media screen  and (max-width: 1465px){
+    .container{
+        width: 80%;
+
+    }
+}
+
+@media screen  and (max-width: 1265px){
+    .container{
+        width: 90%;
+
+    }
+}
+
+@media screen  and (max-width: 1125px){
+    .title{
+        font-size: 12px;
+    
+    }
+    
+    .subtitle{
+        font-size: 24px;   
+   
+    }
+    
+    .paragraph{
+        font-size: 14px; 
+
+
+    }  
+    
+    .button{        
+        font-size: 12px;   
+        width: 130px;
+        height: 130px;
+ 
+    
+        &:hover{    
+            &::after{           
+                width: 85px;           
+            }
+        }
+    
+        img{
+            width: 40px;          
+
+        }    
+
+    }
+    
+    .button-active{       
+        img{
+            width: 60px;
+        }
+
+    
+    }
+    
+    .content-description{       
+        width: 90%;    
+    }
+    
+    .description-container{
+        
+        .description-paragraph{
+            font-size: 16px;
+    
+        }
+       
+        img{
+            width: 70px;
+            height: 70px;
+            
+        }   
+}
+
+
+}
+
+@media screen  and (max-width: 900px){
+
+    .title{
+        font-size: 10px;
+    
+    }
+    
+    .subtitle{
+        font-size: 18px;   
+   
+    }
+    
+    .paragraph{
+        font-size: 12px; 
+
+
+    }  
+    
+
+    
+    .button{        
+        font-size: 9px;   
+        width: 100px;
+        height: 100px;
+        letter-spacing: 0px;
+    
+        &:hover{    
+            &::after{           
+                width: 65px;  
+                height: 2px;         
+            }
+        }
+    
+        img{
+            width: 30px;          
+
+        }    
+
+    }
+    
+    .button-active{       
+        img{
+            width: 50px;
+        }
+
+    
+    }
+    
+    .content-description{
+        border-radius: 120px 10px 120px 10px;
+    }
+    
+    .description-container{
+
+        .description-paragraph{
+            font-size: 14px;
+    
+        }
+       
+        img{
+            width: 60px;
+            height: 60px;
+            
+        }   
+    }
+
+
+}
+
+@media screen  and (max-width: 780px){
+    .our-advantages{
+        padding: 20px;
+
+    }
+    .container{
+        width: 100%;
+    }
+
+    .content-nav{  
+        width: max-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        justify-items: center;
+        margin: auto;
+    }
+    .button{       
+        margin: 0 ;
+    }
+
+    .button-active{
+        transform: translateY(0px);
+    }
+
+    .content-description{
+        border-radius: 100px 10px 100px 10px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .description-container{
+        padding: 10px;
+
+        .description-paragraph{
+            font-size: 12px;
+
+            &::after{
+                width: 80px;               
+       
+            }    
+        }
+    }
+}
