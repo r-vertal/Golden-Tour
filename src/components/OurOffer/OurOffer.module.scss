@@ -28,7 +28,7 @@
         top:50%;
         left: -100px;
         transform:translate(0%, -50%);
-        width: 80%;
+        width: 520px;
         border-radius: 40px;
         box-shadow: 0 0 7px rgb(71, 71, 71);
         z-index: 3;
@@ -153,4 +153,117 @@
         border-radius: 7px 7px 0 0;
     }
 
+}
+
+
+@media screen  and (max-width:1570px){
+    .content{
+        padding: 40px 150px;
+        padding-right: 220px;
+    }
+}
+
+
+@media screen  and (max-width:1320px){
+    .our-offer-image{
+        display: none;    
+    }
+    .content{
+        margin: auto;
+        border-radius: 40px;
+        padding: 40px 80px 80px;
+        
+    }
+
+    .background-image{
+        position: absolute;
+        top: auto;
+        left: auto;
+        bottom: 5px;
+        right: 5px;
+        transform:translate(0%, 0%);
+        width: 250px;
+        z-index: 2;
+        filter: drop-shadow(0 0 3px #202020);
+        
+    }
+}
+
+@media screen  and (max-width:1150px){
+    .content{
+        width: 75%;
+        
+    }
+}
+
+@media screen  and (max-width:950px){
+    .content{
+        width: 90%;
+        
+    }
+}
+
+@media screen  and (max-width:720px){
+    .our-offer{
+       padding: 20px;
+    }
+    .content{
+        width: 100%;        
+    }
+
+    .title{
+        font-size: 10px;
+    }
+    
+    .subtitle{
+        font-size: 18px;   
+    }
+    
+    .paragraph{
+        font-size: 12px; 
+    }  
+
+    .item-title{  
+        font-size: 16px;  
+    
+    }
+    
+    .item-icon{      
+        width: 30px;
+        height: 30px;        
+        img{
+            width: 30px;
+        }
+        
+    }
+    
+    .item-description{       
+        font-size: 12px;
+ 
+
+    }
+}
+
+@media screen  and (max-width:600px){
+    .content{
+        padding: 40px;   
+        text-align: center;   
+    }
+
+    .item-title{  
+        font-size: 14px;  
+        text-align: left;
+    }
+
+    .item-icon{      
+        width: 20px;
+        height: 20px;        
+        img{
+            width: 20px;
+        }        
+    }
+
+    .item-description{       
+        text-align: left;
+    }
 }
