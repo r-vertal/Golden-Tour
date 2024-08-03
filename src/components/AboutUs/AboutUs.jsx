@@ -3,16 +3,15 @@ import styles from './AboutUs.module.scss';
 function AboutUs() {
 	return (
 		<section id="about-us" className={styles['about-us']}>
-			<div className={styles['about-us-image']}>
-				<img src="/images/office.jpg" alt="about-us" title="About Us" />
-			</div>
-
 			<div className={styles['about-us-content']}>
 				<h2 className={styles.title}>О нас</h2>
 				<h3 className={styles.subtitle}>
 					Туристическое агентство GOLDEN TOUR — Ваш надежный партнер в мире
 					путешествий!
 				</h3>
+				<div className={styles['about-us-image']}>
+					<img src="/images/office.jpg" alt="about-us" title="About Us" />
+				</div>
 				<p className={styles.paragraph}>
 					Туристическое агентство GOLDEN TOUR - одна из ведущих компаний,
 					специализирующаяся на организации путешествий по всему миру. Мы

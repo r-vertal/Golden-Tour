@@ -4,6 +4,7 @@
     position: relative;
     width: 100%;
     display: flex;
+    justify-content: end;
     background: #ffffff;
     padding: 50px 0;
     scroll-margin-top: 65px;
@@ -21,17 +22,17 @@
     
 }
 
-.about-us-image{
-    position: relative;
-    width: 35%;
+.about-us-image{    
+    width: 520px;
     z-index: 3;
+    position: absolute;
+    top:50%;
+    left: -420px;
+    transform:translate(0%, -50%);    
 
     img{
-        position: absolute;
-        top:50%;
-        right: -100px;
-        transform:translate(0%, -50%);
-        width: 80%;
+
+        width: 100%;
         border-radius: 40px;
         box-shadow: 0 0 7px rgb(22, 22, 22);
 
@@ -40,6 +41,7 @@
 }
 
 .about-us-content{    
+    position: relative;
     width: 65%;
     background: #eeeeee;
     border-radius: 40px 0 0 40px;    
@@ -87,5 +89,114 @@
     span{
         color: $color-accent;
         font-weight: 600;
+    }
+}
+
+@media screen  and (max-width:1570px){
+    .about-us-content{
+        padding: 40px 150px;
+        padding-left: 220px;
+    }
+}
+
+@media screen  and (max-width:1400px){
+    .about-us-content{   
+        width: 70%;
+        padding: 40px 100px;
+        padding-left: 220px;
+    }
+    .about-us-image{   
+        width: 420px;
+        left: -320px;
+        
+    }
+
+}
+
+@media screen  and (max-width:1300px){
+    .about-us{
+        justify-content: center;
+    
+    }
+    .about-us-content{   
+        width: 80%;
+        border-radius: 40px;   
+        padding: 40px 80px;
+    }
+    .about-us-image{   
+        position: relative;
+        top: 0;
+        left: 0;
+        transform:translate(0%, 0%); 
+        width: 300px;   
+        margin: 20px;
+        margin-left: 0;        
+        float: left;
+
+        img{
+            border-radius: 7px;
+            box-shadow: 0 0 2px rgb(22, 22, 22);
+        }
+        
+    }
+
+    .background-image{
+        top: auto;
+        bottom: 5px;
+        right: 5px;
+        transform:translate(0%, 0%);
+        width: 200px;        
+    }
+}
+
+@media screen  and (max-width: 950px){
+    .about-us-content{   
+        width: 90%;
+    }
+}
+
+@media screen  and (max-width: 800px){
+    .about-us{
+        padding: 20px;
+    
+    }
+    .about-us-content{   
+        width: 100%;
+        text-align: center;
+        padding: 40px;
+
+    }
+
+    .about-us-image{
+        display: flex;
+        margin: 20px auto;
+        float: none;
+
+    }
+
+    .subtitle{
+        font-size: 24px;
+    }
+}
+
+@media screen  and (max-width: 500px){
+    .about-us-image{
+        width: 90%;
+
+    }
+
+    .title{
+        font-size: 12px; 
+    
+    }
+    
+    .subtitle{
+        font-size: 20px;   
+
+    }
+    
+    .paragraph{
+        font-size: 14px; 
+
     }
 }
