@@ -57,3 +57,51 @@
         white-space: pre
     }
 }
+
+
+@media screen  and (max-width:1000px){
+    .our-statistics-item{        
+        width: 150px;  
+    }
+    
+    .item-value{       
+        width: 60px;
+        height: 60px;        
+        font-size: 18px;    
+    }
+    
+    .item-title{        
+        font-size: 12px;    
+    }
+}
+
+@media screen  and (max-width:800px){
+    .our-statistics-item{        
+        width: 120px;
+        border-radius: 50px 5px 50px 5px;
+        margin: 0 10px;  
+
+    }
+    
+    .item-value{       
+        width: 45px;
+        height: 45px;        
+        font-size: 13px;    
+
+    }
+    
+    .item-title{        
+        font-size: 9px;               
+    }
+}
+
+@media screen  and (max-width:600px){
+    .our-statistics{
+        width: max-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 10px;
+        margin: auto;
+    }
+}
