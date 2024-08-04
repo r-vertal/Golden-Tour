@@ -80,3 +80,71 @@
         white-space: pre
     }
 }
+
+
+@media screen  and (max-width:800px){
+    .arrow{  
+        img{
+            width: 50px;        
+        }
+    }
+    
+    .item{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .item-icon{        
+        width: 50px;
+        height: 50px;
+           
+        img{
+            width: 30px;
+        }
+    
+    }
+    
+    .item-title{
+        font-size: 8px;    
+    }
+
+}
+
+
+@media screen  and (max-width:600px){
+
+    .title{
+        font-size: 10px; 
+    }
+
+    .arrow{  
+        img{
+            width: 30px;        
+        }
+    }
+    
+    .item{
+        width: 100px;
+        height: 100px;
+        padding: 5px;   
+    }
+    
+    .item-icon{        
+        width: 30px;
+        height: 30px;
+           
+        img{
+            width: 20px;
+        }
+    
+    }
+    
+    .item-title{
+        font-size: 6px;   
+
+        &::after{
+            display: none;
+        }
+    }
+
+}
